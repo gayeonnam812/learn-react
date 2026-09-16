@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
-import Greeting from './Greeting';
+import Card from './components/Card';
+import Greeting from './components/Greeting';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       Hello World
       <Greeting/>
+      <Card/>
     </div>
   );
 }
