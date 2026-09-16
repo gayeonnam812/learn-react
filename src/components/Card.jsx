@@ -1,12 +1,17 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({imgUrl, itemName, onButtonClick}) => {
+
+
   return (
-    <div style={{"backgroundColor": "gray"}}>
-      <img src="https://cf.product-image.s.zigzag.kr/original/d/2026/9/3/3642_202609031726294504_44907.gif?width=400&amp;height=400&amp;quality=80&amp;format=webp&amp;transparent=true" alt="지그재그 이미지" />
-      <p>지그재그 이미지</p>
+    <div className='card'>
+      <img src={imgUrl} alt={itemName} />
+      <p>{itemName}</p>
+      <button type='button' onClick={() => onButtonClick(itemName)}>제품 페이지로 가기</button>
     </div>
   )
 }
+
+
 
 export default Card
